@@ -85,7 +85,7 @@ void loop() {
                         { 
                           Serial.println("motorxyfirst");
                           digitalWrite(M1driverDIR,LOW);
-                          digitalWrite(M1driverDIR,LOW);
+                          digitalWrite(M2driverDIR,LOW);
                           for(k=0;k<full_cycle;k++)
                             {
                             digitalWrite(M1driverPUL,HIGH);
@@ -100,7 +100,7 @@ void loop() {
                             { 
                               Serial.println("motorxysecond");
                               digitalWrite(M1driverDIR,HIGH);
-                              digitalWrite(M1driverDIR,LOW);
+                              digitalWrite(M2driverDIR,LOW);
                               for(k=0;k<full_cycle;k++)
                                 {
                                 digitalWrite(M1driverPUL,HIGH);
@@ -116,7 +116,7 @@ void loop() {
                                 { 
                                   Serial.println("motorxythird");
                                   digitalWrite(M1driverDIR,LOW);
-                                  digitalWrite(M1driverDIR,HIGH);
+                                  digitalWrite(M2driverDIR,HIGH);
                                   for(k=0;k<full_cycle;k++)
                                       {
                                       digitalWrite(M1driverPUL,HIGH);
@@ -131,7 +131,7 @@ void loop() {
                                     { 
                                       Serial.println("motorxyfourth");
                                       digitalWrite(M1driverDIR,HIGH);
-                                      digitalWrite(M1driverDIR,HIGH);
+                                      digitalWrite(M2driverDIR,HIGH);
                                       for(k=0;k<full_cycle;k++)
                                         {
                                         digitalWrite(M1driverPUL,HIGH);
@@ -148,9 +148,7 @@ void loop() {
                                                     Serial.println("motor stop"); 
                                                     digitalWrite(M1driverPUL,LOW);
                                                     digitalWrite(M2driverPUL,LOW);
-                                                    digitalWrite(M3driverPUL,LOW);
-                                                    digitalWrite(M4driverPUL,LOW);
-                                                    digitalWrite(M5driverPUL,LOW);
+                                                    
                                                    }
 }
 }
